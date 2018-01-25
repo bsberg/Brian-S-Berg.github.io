@@ -15,9 +15,29 @@
 <style>
 .bgd{
 	background: url(img/background1.jpg) no-repeat center center fixed;
+	opacity: 0.8;
 	-webkit-background-size: cover;
 	-o-background-size:cover;
 	background-size: cover;
+}
+
+.dbg{
+	background-color: blue;
+	opacity: 0.5;
+}
+.sbg{
+	background-color: green;
+	opacity: 0.5;
+}
+
+.pbg{
+	background-color: red;
+	opacity: 0.5;
+}
+
+.cbg{
+	background-color: purple;
+	opacity: 0.5;
 }
 
 .vertical-centre {
@@ -50,6 +70,57 @@ section#skills .container h3 {
   background-image: url(img/background1.jpg) no-repeat center center fixed;
 }
 
+section .container {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  margin: 15px;
+  -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+ }
+
+ .thumbnail img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+/*--------------Testing--------------------*/
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+   -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+
+}
+
+.body{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	display: flex;
+}
+
+
+/*--------------Testing--------------------*/
+
 </style>
 
 <body class = "text-center" data-spy="scroll">
@@ -70,40 +141,63 @@ section#skills .container h3 {
 	        <div class="container">
 	        	<div class="col-sm-12">
 	            	<h1 class="page-header">Who am I?</h1>
-	            	<p>Well I'll tell ya</p>
+	            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum, enim at varius maximus, augue quam ullamcorper tortor, vel consequat nibh massa eu enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer molestie in massa in vehicula. Nullam id risus a velit vulputate egestas vitae interdum massa. Duis id facilisis nibh. Praesent ac sem in est blandit tincidunt. Morbi finibus, turpis dignissim accumsan dictum, est nunc interdum augue, id ultricies velit sem sed metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sagittis lectus in dolor efficitur tincidunt. Etiam ullamcorper vestibulum rhoncus.</p>
 	            </div>
-	        </div>
-        </section>
+	   
+	   			<a href="index.html#contact" >
+					<div class="col-md-6">
+						<div class="thumbnail raise btn">
+							<img />
+							<p><strong>Developer</strong></p>
+							<p>Another meaningful description</p>
+						</div>
+					</div>
+				</a>
 
-        <!-- Skills --> 
-		<section id="skills" class="bgd shadow" data-speed="5" data-type="background">
-			<div class="container">
-				<h1 class="page-header">Projects</h1>
-				<h3>Enjoy the wide range of works I try to work on</h3>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="thumbnail">
-						<img />
-						<p><strong>Project 1</strong></p>
-						<p>Meaningful description</p>
+				<a href="index.html#contact" >
+					<div class="col-md-6">
+						<div class="thumbnail raise">
+							<img />
+							<p><strong>Photographer</strong></p>
+							<p>Not a meaningful description</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img />
-						<p><strong>Project 2</strong></p>
-						<p>Another meaningful description</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img />
-						<p><strong>Project 3</strong></p>
-						<p>Not a meaningful description</p>
-					</div>
-				</div>
+				</a>	
 			</div>
 		</section>
+
+		<!-- DevProjects -->
+		<section id="devProjects" class="dbg">
+			<div class="container">
+			 	<h1 class="page-header">Development Projects</h1>
+	            	<p>Lists in large rows with float link buttons to github each project</p>
+			</div>
+		</section> 
+
+		<!-- Other Skills --> <!-- might move this up --> 
+		<section id="otherSkills" class="sbg">
+			<div class="container">
+			 	<h1 class="page-header">Other Development Skills</h1>
+	            	<p>Small circles that float on mouseover and change color </p>
+			</div>
+		</section> 
+
+		<!-- PhotoPrjects --> 
+		<section id="photoProjects" class="pbg">
+			<div class="container">
+			 	<h1 class="page-header">Photo Projects</h1>
+	            	<p>Small circles that float on mouseover and change color </p>
+			</div>
+		</section> 
+
+		<!-- Contact --> 
+		<section id="contact" class="cbg">
+			<div class="container">
+			 	<h1 class="page-header">Contact Info </h1>
+	            	<p>Email, Resume JPG, social media circles </p>
+			</div>
+		</section> 
+
 
 
 
