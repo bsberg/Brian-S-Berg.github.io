@@ -11,6 +11,7 @@
 	<link href = "css/bootstrap.css" rel = "stylesheet">
 	<link href = "css/style.css" rel = "stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	
 
 
@@ -44,7 +45,7 @@ body {
 }
 
 .cbg{
-	background: url(img/contact.jpg) no-repeat center fixed;
+	background: url(img/new3.jpg) no-repeat center fixed;
 	opacity: 0.8;
 	-webkit-background-size: cover;
 	-o-background-size:cover;
@@ -59,6 +60,7 @@ body {
   align-items: center;
 }
 
+/*Gets rid of blue in links*/
 a { text-decoration : none; color : #000; }
 
 section#home .container h1,
@@ -114,16 +116,19 @@ section .container {
 	opacity: 0.7;
 }
 
-
-
- .padding-0{
+.padding-0{
     padding-right:0;
     padding-left:0;
     padding-top: 10px;
   	padding-bottom: 10px;
 }
 
- .padding{
+.padding-3{
+	padding-right:10;
+	padding-left:10;
+}
+
+.padding{
     margin-top: 20px;
     padding-top: 0px;
   	padding-bottom: 10px;
@@ -267,8 +272,6 @@ right: 10px;
 -o-transform: skew(15deg) rotate(6deg);
 transform: skew(15deg) rotate(6deg); }
 
-/* Weird stuff */
-
 a, a:hover {
 	text-decoration: none;
 }
@@ -284,7 +287,7 @@ a, a:hover {
     background-color: transparent;
 }
 
-.socialbtns .fa {
+.socialbtns .fab {
 	width: 60px;
     height: 60px;
 	color: #000;
@@ -298,18 +301,15 @@ a, a:hover {
 	-o-border-radius: 40px;
 }
 
-.socialbtns .fa:hover {
+.socialbtns .fab:hover {
 	color: #FFF;
 	background-color: #000;
 	border: 1px solid #000;
 }
 
-
-
-
-
-
 </style>
+
+
 
 <body class = "text-center" data-spy="scroll">
 
@@ -329,27 +329,23 @@ a, a:hover {
 	        <div class="container">
 	        	<div class="col-sm-12">
 	            	<h1 class="page-header">Who am I?</h1>
-	            	<p>I am a developer, a photographer, a graphic designer, and a life long learner. For the past 5 years I have been persuing my undergraduate in Computer Science. Through tenacity and grit I have achieved that goal and many others along the way. Through this website I hope to convey some of my interests, projects, and achievments for you to look through.  
+	            	<p>I am a developer, a photographer, a graphic designer, and a life long learner. For the past 5 years I have been pursuing my undergraduate in Computer Science. Through tenacity and grit I have achieved that goal and many others along the way. Through this website I hope to convey some of my interests, projects, and achievements for you to look through.  
 	            	</p>
 	            	<p style="color:white;"> more </p>
 	            </div>
 
-	   			<a href="index.html#contact" >
+	   			<a href="index.html#devProjects" >
 					<div class="col-md-6">
 						<div class="thumbnail raise ">
 							<img src="img/back2.png" class="cover opacity">
-							<!-- <p><strong>Developer</strong></p> -->
-							<!-- <p>B.S. in Computer Science with numerous personal and team projects. Visit my github.</p> -->
 						</div>
 					</div>
 				</a>
 
-				<a href="index.html#contact" >
+				<a href="index.html#photoProjects" >
 					<div class="col-md-6">
 						<div class="thumbnail raise ">
-							<img />
-							<p><strong>Photographer</strong></p>
-							<p></p>
+							<img src="img/P.png" class="cover opacity">
 						</div>
 					</div>
 				</a>	
@@ -364,24 +360,23 @@ a, a:hover {
 	            <br>
 				<div class="row">
 					<div class="col-md-4">
-						<div class="thumbnail">
-							<img src="img/back.png">
-							<p><strong>Humane Interface Design Enterprise</strong></p>
-							<p>-- Google Glass Project --</p>
+						<div class="thumbnail ">
+							<p ><strong>Humane Interface Design Enterprise</strong></p>
+							<p style=" padding-left:10px; padding-right:10px">This enterprise concentrated mostly on the interaction between users and applications. I spent my time here working one two projects. The first project was a Android studio mobile and Google Glass dual application to test attention while driving. The second was a web app to measure what students wanted to listen to during the Winter Carnival rave. 
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="thumbnail">
 							<img />
 							<p><strong>Team Software Project</strong></p>
-							<p>-- Android Studio Project--</p>
+							<p style=" padding-left:10px; padding-right:10px">Our projected was based around the idea of a social media for movie rating. With this we went out to create a Android application that could rate movies while using the facebook API to share it with your friends in a feed that we would create. </p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="thumbnail">
 							<img />
 							<p><strong>IT Oxygen Enterprise</strong></p>
-							<p>-- Security Fix Project --</p>
+							<p style=" padding-left:10px; padding-right:10px">The enterprise has a very diverse range of projects. For my time as a member I chose to work on the Lutheran Seminary code base fix. Our job was to take the existing code base (5+ years old) and update it to protect against modern SQL Injection attacks.</p>
 					</div>
 				</div>
 			</div>
@@ -423,10 +418,10 @@ a, a:hover {
 		
 
 		<!-- PhotoPrjects --> 
-		<section id="photoProjects bigmargin">
+		<section id="photoProjects">
 			<div class="container">
 			 	<h1 class="page-header">Photo Projects</h1>
-	            	<p>Small circles that float on mouseover and change color </p>
+	            	<p>Primarily a landscape photographer with a Nikon D3100. Visit my <a href="https://500px.com/bsberg1">500px</a> for more. </p>
 
 	            <div class="divv">
 		            <ul class="box3">
@@ -462,23 +457,21 @@ a, a:hover {
 
 				<div align="center" class="socialbtns">
 					<ul>
-						<li><a href="#" class="centerIcon fa fa-lg fa-twitter"></a></li>
-						<li><a href="#" class="centerIcon fa fa-lg fa-github"></a></li>
-						<li><a href="#" class="centerIcon fa fa-lg fa-linkedin"></a></li>
-						<li><a href="#" class="centerIcon fa fa-lg fa-instagram"></a></li>
-						<li><a href="#" class="centerIcon fa fa-lg fa-500px"></a></li>
-
+						<li><a href="https://github.com/bsberg" class="centerIcon fab fa-lg fa-github"></a></li>
+						<li><a href="https://www.linkedin.com/in/brian-berg-a54026b3/" class="centerIcon fab fa-lg fa-linkedin"></a></li>
+						<li><a href="https://www.instagram.com/briaan_b/" class="centerIcon fab fa-lg fa-instagram"></a></li>
+						<li><a href="https://500px.com/bsberg1" class="centerIcon fab fa-lg fa-500px"></a></li>
+						<li><a href="https://twitter.com/berg_alert" class="centerIcon fab fa-lg fa-twitter"></a></li>
 					</ul>
 				</div>
 			</div>
-
-
-
 		</section> 
+
 </body> 
 
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script  src="js/javaS.js"></script>
+<script  src="js/javaS.js"></script>
+
 
